@@ -1,0 +1,6 @@
+\!archive/
+.venv/
+.archives/
+.logs/
+fastapi_latest_log.txt
+streamlit_latest_log.txt

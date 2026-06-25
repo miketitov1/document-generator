@@ -1,0 +1,44 @@
+[2026-06-25] [00:44:40] [src.shared.logging.init_logging] [INFO]: Logging successfully initialized.
+[2026-06-25] [00:44:40] [src.shared.logging.init_logging] [INFO]: latest_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\streamlit_latest_log.txt
+[2026-06-25] [00:44:40] [src.shared.logging.init_logging] [INFO]: session_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\logs\streamlit\2026.06.25_00.44.40_log.txt
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_part_begin with no data
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[57:76]
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[78:203]
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[205:217]
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[219:284]
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_headers_finished with no data
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_part_data with data[288:26376]
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_part_end with no data
+[2026-06-25] [00:44:47] [python_multipart.multipart] [DEBUG]: Calling on_end with no data
+[2026-06-25] [00:44:47] [uvicorn.access] [INFO]: 127.0.0.1:61084 - "PUT /_stcore/upload_file/337a6d35-2f52-4355-97c5-fa8f36d7ece1/2358c8bd-c0ce-4bdc-bd5c-4d3fbe718276 HTTP/1.1" 204
+[2026-06-25] [00:44:49] [urllib3.connectionpool] [DEBUG]: Starting new HTTP connection (1): localhost:8000
+[2026-06-25] [00:44:51] [urllib3.connectionpool] [DEBUG]: http://localhost:8000 "POST /process-excel HTTP/1.1" 200 45845
+[2026-06-25] [00:45:04] [urllib3.connectionpool] [DEBUG]: Starting new HTTP connection (1): localhost:8000
+[2026-06-25] [00:45:06] [urllib3.connectionpool] [DEBUG]: http://localhost:8000 "GET /settings HTTP/1.1" 200 1574
+[2026-06-25] [00:45:06] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [00:45:06] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [00:45:14] [urllib3.connectionpool] [DEBUG]: Starting new HTTP connection (1): localhost:8000
+[2026-06-25] [00:45:17] [urllib3.connectionpool] [DEBUG]: http://localhost:8000 "GET /settings HTTP/1.1" 200 1574
+[2026-06-25] [00:45:17] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [00:45:17] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [00:45:17] [urllib3.connectionpool] [DEBUG]: Starting new HTTP connection (1): localhost:8000
+[2026-06-25] [00:45:19] [urllib3.connectionpool] [DEBUG]: http://localhost:8000 "POST /transform-data HTTP/1.1" 200 97640
+[2026-06-25] [00:45:19] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [00:45:19] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_part_begin with no data
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[57:76]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[78:187]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[189:201]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[203:231]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_headers_finished with no data
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_part_data with data[235:31446]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_part_data with data[0:83946]
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_part_end with no data
+[2026-06-25] [00:47:57] [python_multipart.multipart] [DEBUG]: Calling on_end with no data
+[2026-06-25] [00:47:57] [uvicorn.access] [INFO]: 127.0.0.1:52841 - "PUT /_stcore/upload_file/337a6d35-2f52-4355-97c5-fa8f36d7ece1/975c9349-ea88-4f75-a27e-658552bb21e0 HTTP/1.1" 204
+[2026-06-25] [00:48:00] [urllib3.connectionpool] [DEBUG]: Starting new HTTP connection (1): localhost:8000
+[2026-06-25] [00:48:02] [urllib3.connectionpool] [DEBUG]: http://localhost:8000 "POST /generate-documents HTTP/1.1" 422 92

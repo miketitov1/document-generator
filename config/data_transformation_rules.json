@@ -1,0 +1,84 @@
+{
+    "rules_list": [
+        {
+            "selected": true,
+            "old_var_name": "full_name",
+            "old_header_name": "Полное имя",
+            "new_var_name": "full_name_genitive_case",
+            "new_header_name": "Полное имя, родительный падеж",
+            "type": "name_declension",
+            "lang": "ru",
+            "case": 0,
+            "name_parts_order": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "selected": true,
+            "old_var_name": "price",
+            "old_header_name": "Стоимость работ",
+            "new_var_name": "price_in_words",
+            "new_header_name": "Стоимость работ (словами)",
+            "type": "num_to_words",
+            "lang": "ru"
+        },
+        {
+            "selected": true,
+            "old_var_name": "ndfl",
+            "old_header_name": "В т.ч. НДФЛ",
+            "new_var_name": "ndfl_in_words",
+            "new_header_name": "В т.ч. НДФЛ (словами)",
+            "type": "num_to_words",
+            "lang": "ru"
+        },
+        {
+            "selected": true,
+            "old_var_name": "price_minus_ndfl",
+            "old_header_name": "К выплате",
+            "new_var_name": "price_minus_ndfl_in_words",
+            "new_header_name": "К выплате (словами)",
+            "type": "num_to_words",
+            "lang": "ru"
+        },
+        {
+            "selected": true,
+            "old_var_name": "contract_date",
+            "old_header_name": "Договор дата",
+            "new_var_name": "contract_year",
+            "new_header_name": "Договор (год)",
+            "type": "date_part_getter",
+            "date_part": "year"
+        },
+        {
+            "selected": true,
+            "old_var_name": "full_name",
+            "old_header_name": "ФИО",
+            "new_var_name": "short_name",
+            "new_header_name": "Короткое имя",
+            "type": "name_shortener",
+            "lang": "ru",
+            "name_parts_order": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "selected": true,
+            "old_var_name": "full_name",
+            "old_header_name": "ФИО",
+            "new_var_name": "last_name",
+            "new_header_name": "Фамилия",
+            "type": "name_part_getter",
+            "lang": "ru",
+            "name_part": 1,
+            "name_parts_order": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+[2026-06-25] [01:40:09] [src.shared.logging.init_logging] [INFO]: Logging successfully initialized.
+[2026-06-25] [01:40:09] [src.shared.logging.init_logging] [INFO]: latest_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\fastapi_latest_log.txt
+[2026-06-25] [01:40:09] [src.shared.logging.init_logging] [INFO]: session_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\logs\fastapi\2026.06.25_01.40.09_log.txt
+[2026-06-25] [01:40:09] [uvicorn.error] [INFO]: Application startup complete.
+[2026-06-25] [01:40:12] [uvicorn.error] [INFO]: Shutting down
+[2026-06-25] [01:40:12] [uvicorn.error] [INFO]: Waiting for application shutdown.
+[2026-06-25] [01:40:12] [uvicorn.error] [INFO]: Application shutdown complete.
+[2026-06-25] [01:40:12] [uvicorn.error] [INFO]: Finished server process [3068]

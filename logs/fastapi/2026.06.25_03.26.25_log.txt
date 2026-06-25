@@ -1,0 +1,833 @@
+[2026-06-25] [03:26:25] [src.shared.logging.init_logging] [INFO]: Logging successfully initialized.
+[2026-06-25] [03:26:25] [src.shared.logging.init_logging] [INFO]: latest_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\fastapi_latest_log.txt
+[2026-06-25] [03:26:25] [src.shared.logging.init_logging] [INFO]: session_log = D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\logs\fastapi\2026.06.25_03.26.25_log.txt
+[2026-06-25] [03:26:25] [uvicorn.error] [INFO]: Application startup complete.
+[2026-06-25] [03:26:38] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:26:38] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:26:38] [uvicorn.access] [INFO]: 127.0.0.1:59382 - "GET /settings HTTP/1.1" 200
+[2026-06-25] [03:26:43] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:26:43] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:26:43] [uvicorn.access] [INFO]: 127.0.0.1:59384 - "GET /settings HTTP/1.1" 200
+[2026-06-25] [03:26:47] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:26:47] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:26:47] [uvicorn.access] [INFO]: 127.0.0.1:59386 - "GET /settings HTTP/1.1" 200
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Starting data transformation with 7 rules.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Transforming 41 rows of Excel data and 27 mapping entries.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Mapping transformation rules by their associated variable.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Name Declension' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Number to Words' to variable 'price'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Number to Words' to variable 'ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Number to Words' to variable 'price_minus_ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Date Part Getter' to variable 'contract_date'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Name Shortener' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [DEBUG]: Mapped transformation rule 'Name Part Getter' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying 3 transformation rules to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Name Declension' to variable 'full_name'.
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Егор', lastname='Егоров', middlename='Егорович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егоров': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егоров' → 'Егорова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егор': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егор' → 'Егора' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Егорович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Егорович' → 'Егоровича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Иван', lastname='Иванов', middlename='Иванович')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванов' → 'Иванова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иван': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иван' → 'Ивана' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Иванович': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Иванович' → 'Ивановича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: detect(firstname='Михаил', lastname='Титов', middlename='Игоревич')
+[2026-06-25] [03:26:49] [pytrovich.detector] [DEBUG]: per-part genders: {'lastname': <Gender.MALE: 0>, 'firstname': <Gender.MALE: 0>, 'middlename': <Gender.MALE: 0>}
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Титов': gender=male, test=['в', 'н']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Титов' → 'Титова' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Михаил': gender=male, test=['б', 'в', 'г', 'д', 'ж', 'з', 'к', 'л', 'м', 'н', 'п', 'р', 'с', 'т', 'ф', 'х', 'ц', 'ч']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Михаил' → 'Михаила' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: selected rule for 'Игоревич': gender=male, test=['ич']
+[2026-06-25] [03:26:49] [pytrovich.maker] [DEBUG]: applied mod 'а' to 'Игоревич' → 'Игоревича' (case=Case.GENITIVE)
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Name Declension' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Name Shortener' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Name Shortener' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Name Part Getter' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Name Part Getter' to variable 'full_name'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying 1 transformation rules to variable 'price'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Number to Words' to variable 'price'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Number to Words' to variable 'price'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying 1 transformation rules to variable 'ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Number to Words' to variable 'ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Number to Words' to variable 'ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying 1 transformation rules to variable 'price_minus_ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Number to Words' to variable 'price_minus_ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Number to Words' to variable 'price_minus_ndfl'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying 1 transformation rules to variable 'contract_date'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Applying transformation rule 'Date Part Getter' to variable 'contract_date'.
+[2026-06-25] [03:26:49] [src.core.data_transformation.data_transformer] [INFO]: Completed applying transformation rule 'Date Part Getter' to variable 'contract_date'.
+[2026-06-25] [03:26:49] [uvicorn.access] [INFO]: 127.0.0.1:59388 - "POST /transform-data HTTP/1.1" 200
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_begin with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[36:55]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[57:82]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_headers_finished with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_data with data[86:89909]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_end with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_begin with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[89947:89966]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[89968:90059]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_field with data[90061:90073]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_value with data[90075:90103]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_header_end with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_headers_finished with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_data with data[90107:205430]
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_part_end with no data
+[2026-06-25] [03:27:41] [python_multipart.multipart] [DEBUG]: Calling on_end with no data
+[2026-06-25] [03:27:41] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:27:41] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Starting document generation for 41 data rows.
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Templates folder: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Output folder: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output
+[2026-06-25] [03:27:41] [src.core.utils.path_utils] [INFO]: Cleaning directory before generation: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output
+[2026-06-25] [03:27:41] [src.core.utils.path_utils] [INFO]: Cleaned directory. Deleted 0 files and 0 folders.
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Found 5 template(s) in the templates folder.
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [INFO]: Initializing Word application for page counting.
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [INFO]: Word application initialized successfully for page counting.
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Акт №{{ act_number }}.docx
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Акт №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Template '{{ last_name }} Акт №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Договор №{{ act_number }}.docx
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Договор №{{ act_number }}.docx' has 5 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Template '{{ last_name }} Договор №{{ act_number }}.docx' has 5 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Приложение к договору №{{ act_number }}.docx
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Приложение к договору №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Template '{{ last_name }} Приложение к договору №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Согласие на обработку №{{ act_number }}.docx
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Согласие на обработку №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Template '{{ last_name }} Согласие на обработку №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Согласие на передачу №{{ act_number }}.docx
+[2026-06-25] [03:27:41] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\templates\Шаблоны документов\{{ full_name }} Договор №{{ act_number }}\{{ last_name }} Согласие на передачу №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:41] [src.core.document_generation.document_generator] [INFO]: Template '{{ last_name }} Согласие на передачу №{{ act_number }}.docx' has 1 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Акт №72_6.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Акт №72_6.docx' has 1 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Договор №72_6.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Договор №72_6.docx' has 5 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Приложение к договору №72_6.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Приложение к договору №72_6.docx' has 1 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Согласие на обработку №72_6.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Согласие на обработку №72_6.docx' has 1 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Согласие на передачу №72_6.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №72_6\Иван Согласие на передачу №72_6.docx' has 1 page(s).
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Акт №70_9.docx
+[2026-06-25] [03:27:42] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Акт №70_9.docx' has 1 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Договор №70_9.docx
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Договор №70_9.docx' has 5 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Приложение к договору №70_9.docx
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Приложение к договору №70_9.docx' has 1 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Согласие на обработку №70_9.docx
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Согласие на обработку №70_9.docx' has 1 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Согласие на передачу №70_9.docx
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №70_9\Михаил Согласие на передачу №70_9.docx' has 1 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Акт №38_3.docx
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Акт №38_3.docx' has 1 page(s).
+[2026-06-25] [03:27:43] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Договор №38_3.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Договор №38_3.docx' has 5 page(s).
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Приложение к договору №38_3.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Приложение к договору №38_3.docx' has 1 page(s).
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Согласие на обработку №38_3.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Согласие на обработку №38_3.docx' has 1 page(s).
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Согласие на передачу №38_3.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №38_3\Егор Согласие на передачу №38_3.docx' has 1 page(s).
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Акт №49_12.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Акт №49_12.docx' has 1 page(s).
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Договор №49_12.docx
+[2026-06-25] [03:27:44] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Договор №49_12.docx' has 5 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Приложение к договору №49_12.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Приложение к договору №49_12.docx' has 1 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Согласие на обработку №49_12.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Согласие на обработку №49_12.docx' has 1 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Согласие на передачу №49_12.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №49_12\Иван Согласие на передачу №49_12.docx' has 1 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Акт №109_1.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Акт №109_1.docx' has 1 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Договор №109_1.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Договор №109_1.docx' has 5 page(s).
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Приложение к договору №109_1.docx
+[2026-06-25] [03:27:45] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Приложение к договору №109_1.docx' has 1 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Согласие на обработку №109_1.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Согласие на обработку №109_1.docx' has 1 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Согласие на передачу №109_1.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №109_1\Михаил Согласие на передачу №109_1.docx' has 1 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Акт №68_5.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Акт №68_5.docx' has 1 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Договор №68_5.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Договор №68_5.docx' has 5 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Приложение к договору №68_5.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Приложение к договору №68_5.docx' has 1 page(s).
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Согласие на обработку №68_5.docx
+[2026-06-25] [03:27:46] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Согласие на обработку №68_5.docx' has 1 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Согласие на передачу №68_5.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №68_5\Егор Согласие на передачу №68_5.docx' has 1 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Акт №80_6.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Акт №80_6.docx' has 1 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Договор №80_6.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Договор №80_6.docx' has 5 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Приложение к договору №80_6.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Приложение к договору №80_6.docx' has 1 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Согласие на обработку №80_6.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Согласие на обработку №80_6.docx' has 1 page(s).
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Согласие на передачу №80_6.docx
+[2026-06-25] [03:27:47] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №80_6\Иван Согласие на передачу №80_6.docx' has 1 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Акт №32_6.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Акт №32_6.docx' has 1 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Договор №32_6.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Договор №32_6.docx' has 5 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Приложение к договору №32_6.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Приложение к договору №32_6.docx' has 1 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Согласие на обработку №32_6.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Согласие на обработку №32_6.docx' has 1 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Согласие на передачу №32_6.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №32_6\Михаил Согласие на передачу №32_6.docx' has 1 page(s).
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Акт №95_3.docx
+[2026-06-25] [03:27:48] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Акт №95_3.docx' has 1 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Договор №95_3.docx
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Договор №95_3.docx' has 5 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Приложение к договору №95_3.docx
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Приложение к договору №95_3.docx' has 1 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Согласие на обработку №95_3.docx
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Согласие на обработку №95_3.docx' has 1 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Согласие на передачу №95_3.docx
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №95_3\Егор Согласие на передачу №95_3.docx' has 1 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Акт №33_8.docx
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Акт №33_8.docx' has 1 page(s).
+[2026-06-25] [03:27:49] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Договор №33_8.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Договор №33_8.docx' has 5 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Приложение к договору №33_8.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Приложение к договору №33_8.docx' has 1 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Согласие на обработку №33_8.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Согласие на обработку №33_8.docx' has 1 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Согласие на передачу №33_8.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №33_8\Иван Согласие на передачу №33_8.docx' has 1 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Акт №86_7.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Акт №86_7.docx' has 1 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Договор №86_7.docx
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Договор №86_7.docx' has 5 page(s).
+[2026-06-25] [03:27:50] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Приложение к договору №86_7.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Приложение к договору №86_7.docx' has 1 page(s).
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Согласие на обработку №86_7.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Согласие на обработку №86_7.docx' has 1 page(s).
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Согласие на передачу №86_7.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №86_7\Михаил Согласие на передачу №86_7.docx' has 1 page(s).
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Акт №98_3.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Акт №98_3.docx' has 1 page(s).
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Договор №98_3.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Договор №98_3.docx' has 5 page(s).
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Приложение к договору №98_3.docx
+[2026-06-25] [03:27:51] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Приложение к договору №98_3.docx' has 1 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Согласие на обработку №98_3.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Согласие на обработку №98_3.docx' has 1 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Согласие на передачу №98_3.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №98_3\Егор Согласие на передачу №98_3.docx' has 1 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Акт №55_4.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Акт №55_4.docx' has 1 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Договор №55_4.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Договор №55_4.docx' has 5 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Приложение к договору №55_4.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Приложение к договору №55_4.docx' has 1 page(s).
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Согласие на обработку №55_4.docx
+[2026-06-25] [03:27:52] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Согласие на обработку №55_4.docx' has 1 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Согласие на передачу №55_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №55_4\Иван Согласие на передачу №55_4.docx' has 1 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Акт №3_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Акт №3_4.docx' has 1 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Договор №3_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Договор №3_4.docx' has 5 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Приложение к договору №3_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Приложение к договору №3_4.docx' has 1 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Согласие на обработку №3_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Согласие на обработку №3_4.docx' has 1 page(s).
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Согласие на передачу №3_4.docx
+[2026-06-25] [03:27:53] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №3_4\Михаил Согласие на передачу №3_4.docx' has 1 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Акт №87_4.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Акт №87_4.docx' has 1 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Договор №87_4.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Договор №87_4.docx' has 5 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Приложение к договору №87_4.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Приложение к договору №87_4.docx' has 1 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Согласие на обработку №87_4.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Согласие на обработку №87_4.docx' has 1 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Согласие на передачу №87_4.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №87_4\Егор Согласие на передачу №87_4.docx' has 1 page(s).
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Акт №18_9.docx
+[2026-06-25] [03:27:54] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Акт №18_9.docx' has 1 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Договор №18_9.docx
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Договор №18_9.docx' has 5 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Приложение к договору №18_9.docx
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Приложение к договору №18_9.docx' has 1 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Согласие на обработку №18_9.docx
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Согласие на обработку №18_9.docx' has 1 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Согласие на передачу №18_9.docx
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №18_9\Иван Согласие на передачу №18_9.docx' has 1 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Акт №44_7.docx
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Акт №44_7.docx' has 1 page(s).
+[2026-06-25] [03:27:55] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Договор №44_7.docx
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Договор №44_7.docx' has 5 page(s).
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Приложение к договору №44_7.docx
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Приложение к договору №44_7.docx' has 1 page(s).
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Согласие на обработку №44_7.docx
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Согласие на обработку №44_7.docx' has 1 page(s).
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Согласие на передачу №44_7.docx
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №44_7\Михаил Согласие на передачу №44_7.docx' has 1 page(s).
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Акт №62_9.docx
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Акт №62_9.docx' has 1 page(s).
+[2026-06-25] [03:27:56] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Договор №62_9.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Договор №62_9.docx' has 5 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Приложение к договору №62_9.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Приложение к договору №62_9.docx' has 1 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Согласие на обработку №62_9.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Согласие на обработку №62_9.docx' has 1 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Согласие на передачу №62_9.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №62_9\Егор Согласие на передачу №62_9.docx' has 1 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Акт №81_3.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Акт №81_3.docx' has 1 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Договор №81_3.docx
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Договор №81_3.docx' has 5 page(s).
+[2026-06-25] [03:27:57] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Приложение к договору №81_3.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Приложение к договору №81_3.docx' has 1 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Согласие на обработку №81_3.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Согласие на обработку №81_3.docx' has 1 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Согласие на передачу №81_3.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №81_3\Иван Согласие на передачу №81_3.docx' has 1 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Акт №51_6.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Акт №51_6.docx' has 1 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Договор №51_6.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Договор №51_6.docx' has 5 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Приложение к договору №51_6.docx
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Приложение к договору №51_6.docx' has 1 page(s).
+[2026-06-25] [03:27:58] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Согласие на обработку №51_6.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Согласие на обработку №51_6.docx' has 1 page(s).
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Согласие на передачу №51_6.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №51_6\Михаил Согласие на передачу №51_6.docx' has 1 page(s).
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Акт №4_5.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Акт №4_5.docx' has 1 page(s).
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Договор №4_5.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Договор №4_5.docx' has 5 page(s).
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Приложение к договору №4_5.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Приложение к договору №4_5.docx' has 1 page(s).
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Согласие на обработку №4_5.docx
+[2026-06-25] [03:27:59] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Согласие на обработку №4_5.docx' has 1 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Согласие на передачу №4_5.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №4_5\Егор Согласие на передачу №4_5.docx' has 1 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Акт №105_2.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Акт №105_2.docx' has 1 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Договор №105_2.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Договор №105_2.docx' has 5 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Приложение к договору №105_2.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Приложение к договору №105_2.docx' has 1 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Согласие на обработку №105_2.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Согласие на обработку №105_2.docx' has 1 page(s).
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Согласие на передачу №105_2.docx
+[2026-06-25] [03:28:00] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №105_2\Иван Согласие на передачу №105_2.docx' has 1 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Акт №27_13.docx
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Акт №27_13.docx' has 1 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Договор №27_13.docx
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Договор №27_13.docx' has 5 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Приложение к договору №27_13.docx
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Приложение к договору №27_13.docx' has 1 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Согласие на обработку №27_13.docx
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Согласие на обработку №27_13.docx' has 1 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Согласие на передачу №27_13.docx
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №27_13\Михаил Согласие на передачу №27_13.docx' has 1 page(s).
+[2026-06-25] [03:28:01] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Акт №100_2.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Акт №100_2.docx' has 1 page(s).
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Договор №100_2.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Договор №100_2.docx' has 5 page(s).
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Приложение к договору №100_2.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Приложение к договору №100_2.docx' has 1 page(s).
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Согласие на обработку №100_2.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Согласие на обработку №100_2.docx' has 1 page(s).
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Согласие на передачу №100_2.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №100_2\Егор Согласие на передачу №100_2.docx' has 1 page(s).
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Акт №85_8.docx
+[2026-06-25] [03:28:02] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Акт №85_8.docx' has 1 page(s).
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Договор №85_8.docx
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Договор №85_8.docx' has 5 page(s).
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Приложение к договору №85_8.docx
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Приложение к договору №85_8.docx' has 1 page(s).
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Согласие на обработку №85_8.docx
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Согласие на обработку №85_8.docx' has 1 page(s).
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Согласие на передачу №85_8.docx
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №85_8\Иван Согласие на передачу №85_8.docx' has 1 page(s).
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Акт №53_6.docx
+[2026-06-25] [03:28:03] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Акт №53_6.docx' has 1 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Договор №53_6.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Договор №53_6.docx' has 5 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Приложение к договору №53_6.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Приложение к договору №53_6.docx' has 1 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Согласие на обработку №53_6.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Согласие на обработку №53_6.docx' has 1 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Согласие на передачу №53_6.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №53_6\Михаил Согласие на передачу №53_6.docx' has 1 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Акт №82_7.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Акт №82_7.docx' has 1 page(s).
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Договор №82_7.docx
+[2026-06-25] [03:28:04] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Договор №82_7.docx' has 5 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Приложение к договору №82_7.docx
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Приложение к договору №82_7.docx' has 1 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Согласие на обработку №82_7.docx
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Согласие на обработку №82_7.docx' has 1 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Согласие на передачу №82_7.docx
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №82_7\Егор Согласие на передачу №82_7.docx' has 1 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Акт №28_7.docx
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Акт №28_7.docx' has 1 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Договор №28_7.docx
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Договор №28_7.docx' has 5 page(s).
+[2026-06-25] [03:28:05] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Приложение к договору №28_7.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Приложение к договору №28_7.docx' has 1 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Согласие на обработку №28_7.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Согласие на обработку №28_7.docx' has 1 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Согласие на передачу №28_7.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №28_7\Иван Согласие на передачу №28_7.docx' has 1 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Акт №50_9.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Акт №50_9.docx' has 1 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Договор №50_9.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Договор №50_9.docx' has 5 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Приложение к договору №50_9.docx
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Приложение к договору №50_9.docx' has 1 page(s).
+[2026-06-25] [03:28:06] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Согласие на обработку №50_9.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Согласие на обработку №50_9.docx' has 1 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Согласие на передачу №50_9.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №50_9\Михаил Согласие на передачу №50_9.docx' has 1 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Акт №35_10.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Акт №35_10.docx' has 1 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Договор №35_10.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Договор №35_10.docx' has 5 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Приложение к договору №35_10.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Приложение к договору №35_10.docx' has 1 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Согласие на обработку №35_10.docx
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Согласие на обработку №35_10.docx' has 1 page(s).
+[2026-06-25] [03:28:07] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Согласие на передачу №35_10.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №35_10\Егор Согласие на передачу №35_10.docx' has 1 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Акт №17_4.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Акт №17_4.docx' has 1 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Договор №17_4.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Договор №17_4.docx' has 5 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Приложение к договору №17_4.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Приложение к договору №17_4.docx' has 1 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Согласие на обработку №17_4.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Согласие на обработку №17_4.docx' has 1 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Согласие на передачу №17_4.docx
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №17_4\Иван Согласие на передачу №17_4.docx' has 1 page(s).
+[2026-06-25] [03:28:08] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Акт №9_21.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Акт №9_21.docx' has 1 page(s).
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Договор №9_21.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Договор №9_21.docx' has 5 page(s).
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Приложение к договору №9_21.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Приложение к договору №9_21.docx' has 1 page(s).
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Согласие на обработку №9_21.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Согласие на обработку №9_21.docx' has 1 page(s).
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Согласие на передачу №9_21.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №9_21\Михаил Согласие на передачу №9_21.docx' has 1 page(s).
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Акт №107_2.docx
+[2026-06-25] [03:28:09] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Акт №107_2.docx' has 1 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Договор №107_2.docx
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Договор №107_2.docx' has 5 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Приложение к договору №107_2.docx
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Приложение к договору №107_2.docx' has 1 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Согласие на обработку №107_2.docx
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Согласие на обработку №107_2.docx' has 1 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Согласие на передачу №107_2.docx
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №107_2\Егор Согласие на передачу №107_2.docx' has 1 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Акт №101_2.docx
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Акт №101_2.docx' has 1 page(s).
+[2026-06-25] [03:28:10] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Договор №101_2.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Договор №101_2.docx' has 5 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Приложение к договору №101_2.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Приложение к договору №101_2.docx' has 1 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Согласие на обработку №101_2.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Согласие на обработку №101_2.docx' has 1 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Согласие на передачу №101_2.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №101_2\Иван Согласие на передачу №101_2.docx' has 1 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Акт №103_3.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Акт №103_3.docx' has 1 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Договор №103_3.docx
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Договор №103_3.docx' has 5 page(s).
+[2026-06-25] [03:28:11] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Приложение к договору №103_3.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Приложение к договору №103_3.docx' has 1 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Согласие на обработку №103_3.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Согласие на обработку №103_3.docx' has 1 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Согласие на передачу №103_3.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №103_3\Михаил Согласие на передачу №103_3.docx' has 1 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Акт №10_14.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Акт №10_14.docx' has 1 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Договор №10_14.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Договор №10_14.docx' has 5 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Приложение к договору №10_14.docx
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Приложение к договору №10_14.docx' has 1 page(s).
+[2026-06-25] [03:28:12] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Согласие на обработку №10_14.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Согласие на обработку №10_14.docx' has 1 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Согласие на передачу №10_14.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №10_14\Егор Согласие на передачу №10_14.docx' has 1 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Акт №61_7.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Акт №61_7.docx' has 1 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Договор №61_7.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Договор №61_7.docx' has 5 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Приложение к договору №61_7.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Приложение к договору №61_7.docx' has 1 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Согласие на обработку №61_7.docx
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Согласие на обработку №61_7.docx' has 1 page(s).
+[2026-06-25] [03:28:13] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Согласие на передачу №61_7.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №61_7\Иван Согласие на передачу №61_7.docx' has 1 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Акт №45_8.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Акт №45_8.docx' has 1 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Договор №45_8.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Договор №45_8.docx' has 5 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Приложение к договору №45_8.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Приложение к договору №45_8.docx' has 1 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Согласие на обработку №45_8.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Согласие на обработку №45_8.docx' has 1 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Согласие на передачу №45_8.docx
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №45_8\Михаил Согласие на передачу №45_8.docx' has 1 page(s).
+[2026-06-25] [03:28:14] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Акт №39_13.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Акт №39_13.docx' has 1 page(s).
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Договор №39_13.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Договор №39_13.docx' has 5 page(s).
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Приложение к договору №39_13.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Приложение к договору №39_13.docx' has 1 page(s).
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Согласие на обработку №39_13.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Согласие на обработку №39_13.docx' has 1 page(s).
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Согласие на передачу №39_13.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Егоров Егор Егорович Договор №39_13\Егор Согласие на передачу №39_13.docx' has 1 page(s).
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Акт №52_7.docx
+[2026-06-25] [03:28:15] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Акт №52_7.docx' has 1 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Договор №52_7.docx
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Договор №52_7.docx' has 5 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Приложение к договору №52_7.docx
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Приложение к договору №52_7.docx' has 1 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Согласие на обработку №52_7.docx
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Согласие на обработку №52_7.docx' has 1 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Согласие на передачу №52_7.docx
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Иванов Иван Иванович Договор №52_7\Иван Согласие на передачу №52_7.docx' has 1 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Акт №96_3.docx
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Акт №96_3.docx' has 1 page(s).
+[2026-06-25] [03:28:16] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Договор №96_3.docx
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Договор №96_3.docx' has 5 page(s).
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Приложение к договору №96_3.docx
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Приложение к договору №96_3.docx' has 1 page(s).
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Согласие на обработку №96_3.docx
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Согласие на обработку №96_3.docx' has 1 page(s).
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Opening document for page counting: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Согласие на передачу №96_3.docx
+[2026-06-25] [03:28:17] [src.core.document_generation.word_page_counter] [DEBUG]: Document 'C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk\output\Шаблоны документов\Титов Михаил Игоревич Договор №96_3\Михаил Согласие на передачу №96_3.docx' has 1 page(s).
+[2026-06-25] [03:28:17] [uvicorn.access] [INFO]: 127.0.0.1:52132 - "POST /generate-documents HTTP/1.1" 200
+[2026-06-25] [03:28:17] [src.core.utils.path_utils] [INFO]: Cleaned up temporary workspace: C:\Users\MIKETI~1\AppData\Local\Temp\doc_gen_mrd4evfk
+[2026-06-25] [03:28:19] [uvicorn.access] [INFO]: 127.0.0.1:52138 - "GET /download/generated_docs_20260625_032817_500431.zip HTTP/1.1" 200
+[2026-06-25] [03:28:30] [uvicorn.access] [INFO]: 127.0.0.1:52142 - "GET /download/generated_docs_20260625_032817_500431.zip HTTP/1.1" 200
+[2026-06-25] [03:29:27] [pytrovich.maker] [DEBUG]: loaded declination rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\rules.json
+[2026-06-25] [03:29:27] [pytrovich.detector] [DEBUG]: loaded gender rules from D:\users\miketitov1\programming\vs-code\python\accounting\document-generator\.venv\Lib\site-packages\pytrovich\petrovich-rules\gender.json
+[2026-06-25] [03:29:27] [uvicorn.access] [INFO]: 127.0.0.1:52149 - "GET /settings HTTP/1.1" 200
